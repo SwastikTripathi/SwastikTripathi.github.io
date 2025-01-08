@@ -1,1 +1,0 @@
-for post content to be in left, go to post content section in post.html and remove justify-content-center. also increase width taken by the post and images and add space for ad
