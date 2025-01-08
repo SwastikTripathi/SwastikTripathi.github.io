@@ -586,7 +586,7 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -10552,7 +10552,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 hr {
@@ -10758,7 +10758,7 @@ header.masthead .post-heading .meta a {
 }
 
 .section-heading {
-  font-size: 2.25rem;
+  /* font-size: 2.25rem; */
   font-weight: 700;
   margin-top: 3.75rem;
 }
