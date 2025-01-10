@@ -10941,6 +10941,7 @@ header.masthead .meta a:hover {
   display: flex;
   align-items: center;
   gap: 5px; /* Space between elements in the same line */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .meta a {
@@ -10983,11 +10984,11 @@ header.masthead .meta a:hover {
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background: none;
+  background: #333; /* Tooltip background */
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /* Tooltip text size */
   white-space: nowrap;
   z-index: 10;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -10997,6 +10998,18 @@ header.masthead .meta a:hover {
   visibility: visible;
   opacity: 1;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 500px) {
+  .meta {
+    flex-wrap: wrap; /* Move elements to a new line if space is limited */
+  }
+
+  .action-button {
+    margin-top: 5px; /* Add spacing when wrapped to a new line */
+  }
+}
+
 
 .navbar-brand {
   font-size: 1.25rem; /* Normal font size for larger screens */
