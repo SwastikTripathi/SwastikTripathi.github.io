@@ -10823,7 +10823,7 @@ header.masthead .post-heading .meta a {
   border: none;
 }
 
-body > header > div > div > div > div > h1 > span {
+.blog-name {
   font-size: 1.5em;
 }
 body {
@@ -10923,4 +10923,89 @@ header.masthead .meta a:hover {
 
 #sib-container input::placeholder {
   color: #c0ccda;
+}
+
+@media (max-width: 1200px) {
+  .subscribe-side-post {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .subscribe-side-post {
+    display: block;
+  }
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between elements in the same line */
+}
+
+.meta a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+}
+
+.action-button {
+  font-size: 14px;
+  background-color: transparent; /* Match the meta's background */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0;
+  width: 20px; /* Icon size */
+  height: 20px;
+  padding: 0;
+  color: inherit; /* Inherit color to blend with text */
+}
+
+.action-button i {
+  font-size: 16px; /* Adjust icon size */
+}
+
+.action-button:hover {
+  color: var(--accent);
+}
+
+.action-button .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.action-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar-brand {
+  font-size: 1.25rem; /* Normal font size for larger screens */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: small; /* Smaller font size for small screens */
+  }
 }
