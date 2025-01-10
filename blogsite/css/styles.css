@@ -10808,8 +10808,8 @@ header.masthead .post-heading .meta a {
 }
 
 .olderPosts {
-  background-color: black;
-  border-color: black;
+  background-color: #333333;
+  border-color: #333333;
   color: white;
 }
 
@@ -10899,4 +10899,28 @@ header.masthead .meta a {
 
 header.masthead .meta a:hover {
   color: #ddd; /* Optional: Lighter color on hover for better UX */
+}
+
+@font-face {
+  font-display: block;
+  font-family: Roboto;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 600;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2");
+}
+
+#sib-container input::placeholder {
+  color: #c0ccda;
 }
