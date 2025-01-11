@@ -10819,8 +10819,27 @@ header.masthead .post-heading .meta a {
   color: white;
 }
 
+.right-col {
+  padding-left: 3em;
+  padding-right: 1em;
+}
+
+
 .related-articles > .card {
   border: none;
+}
+
+.related-articles .card-body {
+  padding: 0.5em;
+}
+
+@media(max-width: 767px){
+  .related-articles p {
+    font-size: 0.7em;
+  }
+  .right-col {
+    padding-right: 3em;
+  }
 }
 
 .blog-name {
@@ -10856,9 +10875,10 @@ h4 {
 }
 
 p {
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.58;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
+  margin-top: 0.5em;
 }
 
 blockquote {
@@ -10874,13 +10894,17 @@ blockquote {
     font-size: 18px;
   }
 
+  p {
+    font-size: 18px;
+  }
+
   h1 {
     font-size: 30px;
     margin-bottom: 0.5em;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h3 {
@@ -11005,9 +11029,9 @@ header.masthead .meta a:hover {
     flex-wrap: wrap; /* Move elements to a new line if space is limited */
   }
 
-  .action-button {
-    margin-top: 5px; /* Add spacing when wrapped to a new line */
-  }
+  /* .action-button {
+    margin-top: 5px;
+  } */
 }
 
 
