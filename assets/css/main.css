@@ -1405,8 +1405,8 @@ section,
 
 .portfolio .portfolio-content .portfolio-info .details-link {
   left: 50%;
-  font-size: 34px;
-  line-height: 0;
+  font-size: 27.5px;
+  /* line-height: 0; */
 }
 
 .portfolio .portfolio-content:hover .portfolio-info {
@@ -1598,4 +1598,16 @@ section,
 
 hr.dark {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+@media(min-width: 769px){
+  .hide-in-mobile {
+  display: block;
+  }
+}
+
+@media(max-width: 768px) {
+  .hide-in-mobile {
+    display: none;
+  }
 }
