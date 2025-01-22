@@ -795,7 +795,7 @@ section,
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding: 80px 0;
+  /* padding: 80px 0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -820,6 +820,10 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+}
+
+.hero h2:hover {
+  cursor:default;
 }
 
 .hero p {
@@ -1382,7 +1386,7 @@ section,
   display: inline-block;
   left: 0;
   right: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1610,4 +1614,53 @@ hr.dark {
   .hide-in-mobile {
     display: none;
   }
+}
+
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+.pbg body {
+	background: black;
+}
+
+#demo-canvas {
+  background: black;
+}
+
+.pbg a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.pbg a:hover, .pbg a:focus {
+	color: #34495e;
+}
+
+.pbg section {
+	/* padding: 1em; */
+	text-align: center;
+  overflow: hidden;
+}
+
+.tbg {
+  position:absolute;
+  left: 0;
+  padding-left: 7em;
+  overflow: hidden;
+}
+
+@media(max-width:767px) {
+
+  .tbg {
+    padding-left: 1em;
+  }
+  
+}
+
+main {
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* Hide content outside the div */
 }
