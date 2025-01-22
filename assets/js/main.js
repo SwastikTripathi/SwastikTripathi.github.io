@@ -287,7 +287,7 @@
 
       // assign a circle to each point
       for(var i in points) {
-          var c = new Circle(points[i], 2+Math.random()*2, 'rgba(24,210,110,0.7)');
+          var c = new Circle(points[i], 2+Math.random()*2, 'rgba(24,210,110,0.5)');
           points[i].circle = c;
       }
   }
