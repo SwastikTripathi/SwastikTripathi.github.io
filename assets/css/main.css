@@ -1659,7 +1659,7 @@ hr.dark {
   
 }
 
-main {
+.index-main {
   width: 100vw; /* 100% of the viewport width */
   height: 100vh; /* 100% of the viewport height */
   overflow: hidden; /* Hide content outside the div */
